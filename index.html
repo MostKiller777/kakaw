@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kakaw Café — Good Food. Great Company.</title>
+
+    <meta
+        name="description"
+        content="Kakaw Café — chocolate, coffee and desserts in Khor Fakkan."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     LOADER
+========================= -->
+
+<div class="loader" id="loader">
+    <div class="loader-logo">
+        Kakaw
+        <small>CAFE</small>
+    </div>
+    <div class="loader-line"></div>
+</div>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar" id="navbar">
+
+    <a href="#home" class="logo">
+        <span class="logo-script">Kakaw</span>
+        <small>CAFE</small>
+    </a>
+
+    <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button
+            class="icon-btn"
+            id="searchBtn"
+            aria-label="Search"
+        >
+            ⌕
+        </button>
+
+        <button
+            class="cart-btn"
+            id="cartBtn"
+            aria-label="Shopping cart"
+        >
+            ♧
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <!-- DIRECT TALABAT ORDER -->
+        <a
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-order"
+        >
+            Order Now
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open menu"
+    >
+        ☰
+    </button>
+
+</header>
+
+
+<!-- =========================
+     MOBILE MENU
+========================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <button class="mobile-close" id="mobileClose">
+        ×
+    </button>
+
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#story">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+
+    <a
+        href="https://www.talabat.com/uae/kakaw-cafe"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mobile-order"
+    >
+        Order on Talabat →
+    </a>
+
+</div>
+
+
+<!-- =========================
+     SEARCH
+========================= -->
+
+<div class="search-overlay" id="searchOverlay">
+
+    <button class="search-close" id="searchClose">
+        ×
+    </button>
+
+    <div class="search-box">
+
+        <p>WHAT ARE YOU CRAVING?</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search chocolate, coffee, desserts..."
+            autocomplete="off"
+        >
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-image">
+
+        <img
+            src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638558723225699567?width=1800&height=900"
+            alt="Kakaw Chocolate Crepe"
+        >
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-eyebrow">
+            GOOD FOOD · GREAT COMPANY
+        </p>
+
+        <h1>
+            A SWEETER
+            <br>
+            MOMENT,
+            <em>ALWAYS.</em>
+        </h1>
+
+        <p class="hero-description">
+            Chocolate, coffee and desserts
+            <br>
+            made for your moments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="btn btn-primary">
+                Explore Menu
+                <span>→</span>
+            </a>
+
+            <!-- HERO TALABAT BUTTON -->
+            <a
+                href="https://www.talabat.com/uae/kakaw-cafe"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+            >
+                Order on Talabat
+                <span>↗</span>
+            </a>
+
+        </div>
+
+        <div class="hero-location">
+            <span>●</span>
+            Khor Fakkan · UAE
+        </div>
+
+    </div>
+
+    <div class="scroll-down">
+        <span>SCROLL DOWN</span>
+        <b>⌄</b>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MENU
+========================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="menu-header">
+
+        <div>
+
+            <p class="eyebrow">
+                OUR MENU
+            </p>
+
+            <h2>
+                Picks for you
+                <span>🔥</span>
+            </h2>
+
+        </div>
+
+        <!-- DIRECT TALABAT -->
+        <a
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="view-menu"
+        >
+            Order Full Menu
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <!-- FILTERS -->
+
+    <div class="menu-filters">
+
+        <button class="filter active" data-category="all">
+            All
+        </button>
+
+        <button class="filter" data-category="new">
+            New Items
+        </button>
+
+        <button class="filter" data-category="crepe">
+            Crepe
+        </button>
+
+        <button class="filter" data-category="waffle">
+            Waffle
+        </button>
+
+        <button class="filter" data-category="dessert">
+            Desserts
+        </button>
+
+        <button class="filter" data-category="drinks">
+            Cold Drinks
+        </button>
+
+        <button class="filter" data-category="coffee">
+            Coffee Drinks
+        </button>
+
+        <button class="filter" data-category="icecream">
+            Ice Cream
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products-grid" id="productsGrid">
+
+
+        <!-- MOLten CAKE -->
+
+        <article
+            class="product-card"
+            data-category="dessert"
+            data-name="Molten Cake"
+            data-price="58"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/global-menu-service/TB_AE/vendor/25724/product/531971738/2daf1de1-73e0-4c1a-bb7b-1fdb8366c732_original.jpg?width=700&height=700"
+                    alt="Molten Cake"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Molten Cake</h3>
+
+                <p>
+                    Warm and gooey molten cake
+                    with rich chocolate.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 58.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                        aria-label="Order Molten Cake on Talabat"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHOCOLATE CREPE -->
+
+        <article
+            class="product-card"
+            data-category="crepe"
+            data-name="Chocolate Crepe"
+            data-price="36"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638558723225699567?width=700&height=700"
+                    alt="Chocolate Crepe"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Chocolate Crepe</h3>
+
+                <p>
+                    Filled with rich melted
+                    chocolate.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 36.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- KINDER CREPE -->
+
+        <article
+            class="product-card"
+            data-category="crepe"
+            data-name="Kinder Crepe"
+            data-price="40"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638569924520700454?width=700&height=700"
+                    alt="Kinder Crepe"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Kinder Crepe</h3>
+
+                <p>
+                    Delicious Kinder chocolate
+                    crepe.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 40.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PISTACHIO CUP -->
+
+        <article
+            class="product-card"
+            data-category="new dessert"
+            data-name="Pistachio Cup"
+            data-price="48"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638557848105743122?width=700&height=700"
+                    alt="Pistachio Cup"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Pistachio Cup</h3>
+
+                <p>
+                    Delicious with pistachio
+                    sauce.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 48.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BROWNIE BLISS -->
+
+        <article
+            class="product-card"
+            data-category="new dessert"
+            data-name="Kakaw Brownie Bliss"
+            data-price="43"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/25724/PRODUCT/0b48fc41-ebc4-4166-93f7-dd26305cc619.jpg?width=700&height=700"
+                    alt="Kakaw Brownie Bliss"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Kakaw Brownie Bliss</h3>
+
+                <p>
+                    Brownie with peanut butter
+                    and chocolate sauce.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 43.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- WAFFLE KINDER -->
+
+        <article
+            class="product-card"
+            data-category="waffle"
+            data-name="Waffle Kinder"
+            data-price="40"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638569927600174586?width=700&height=700"
+                    alt="Waffle Kinder"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Waffle Kinder</h3>
+
+                <p>
+                    Crispy waffle covered
+                    with Kinder chocolate.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 40.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- RED VELVET -->
+
+        <article
+            class="product-card"
+            data-category="dessert"
+            data-name="Red Velvet Cake"
+            data-price="59"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638569931564980409?width=700&height=700"
+                    alt="Red Velvet Cake"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Red Velvet Cake</h3>
+
+                <p>
+                    Soft and rich red velvet
+                    cake.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 59.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHOCO CUP -->
+
+        <article
+            class="product-card"
+            data-category="new dessert"
+            data-name="Choco Cup"
+            data-price="45"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638558688959888411?width=700&height=700"
+                    alt="Choco Cup"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Choco Cup</h3>
+
+                <p>
+                    A rich chocolate dessert
+                    served in a cup.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 45.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- MINI MOLTEN -->
+
+        <article
+            class="product-card"
+            data-category="new dessert"
+            data-name="Mini Molten Cake"
+            data-price="40"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638614879613935037?width=700&height=700"
+                    alt="Mini Molten Cake"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Mini Molten Cake</h3>
+
+                <p>
+                    Small, warm and
+                    chocolate-filled.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 40.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- NUTELLA CREPE -->
+
+        <article
+            class="product-card"
+            data-category="crepe"
+            data-name="Nutella Crepe"
+            data-price="38"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638569924282986021?width=700&height=700"
+                    alt="Nutella Crepe"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Nutella Crepe</h3>
+
+                <p>
+                    Soft crepe filled with
+                    Nutella.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 38.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- LOTUS CREPE -->
+
+        <article
+            class="product-card"
+            data-category="crepe"
+            data-name="Lotus Crepe"
+            data-price="38"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/Lotus_Crepe_636868814765692968.jpg?width=700&height=700"
+                    alt="Lotus Crepe"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Lotus Crepe</h3>
+
+                <p>
+                    Creamy Lotus biscuit
+                    crepe.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 38.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PISTACHIO CREPE -->
+
+        <article
+            class="product-card"
+            data-category="crepe"
+            data-name="Pistachio Crepe"
+            data-price="48"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/Pistachio_Crepe_636868805708051647.jpg?width=700&height=700"
+                    alt="Pistachio Crepe"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Pistachio Crepe</h3>
+
+                <p>
+                    Pistachio cream with
+                    fresh crepe.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 48.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- WAFFLE LOTUS -->
+
+        <article
+            class="product-card"
+            data-category="waffle"
+            data-name="Waffle Lotus"
+            data-price="38"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/global-menu-service/TB_AE/vendor/25724/product/531971727/fefb9a73-53ff-4e7b-a7d1-9a6a2f62d883.jpg?width=700&height=700"
+                    alt="Waffle Lotus"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Waffle Lotus</h3>
+
+                <p>
+                    Golden waffle with
+                    Lotus topping.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 38.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- WAFFLE STICK -->
+
+        <article
+            class="product-card"
+            data-category="waffle"
+            data-name="Waffle Stick"
+            data-price="36"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638512764735922687?width=700&height=700"
+                    alt="Waffle Stick"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Waffle Stick</h3>
+
+                <p>
+                    Crispy waffle sticks
+                    with chocolate.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 36.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PISTACHIO WAFFLE -->
+
+        <article
+            class="product-card"
+            data-category="waffle"
+            data-name="Waffle Pistachio"
+            data-price="48"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638554669121678013?width=700&height=700"
+                    alt="Waffle Pistachio"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Waffle Pistachio</h3>
+
+                <p>
+                    Waffle topped with
+                    pistachio cream.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 48.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BLUEBERRY MOJITO -->
+
+        <article
+            class="product-card"
+            data-category="drinks"
+            data-name="Blueberry Mojito"
+            data-price="24"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/Blueberry_Mojito_636868808082550515.jpg?width=700&height=700"
+                    alt="Blueberry Mojito"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Blueberry Mojito</h3>
+
+                <p>
+                    Fresh and refreshing
+                    blueberry mojito.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 24.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- STRAWBERRY MOJITO -->
+
+        <article
+            class="product-card"
+            data-category="drinks"
+            data-name="Strawberry Mojito"
+            data-price="24"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638554661354120480?width=700&height=700"
+                    alt="Strawberry Mojito"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Strawberry Mojito</h3>
+
+                <p>
+                    Fruity strawberry
+                    refreshment.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 24.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- LOTUS MILKSHAKE -->
+
+        <article
+            class="product-card"
+            data-category="drinks"
+            data-name="Lotus Milkshake"
+            data-price="25"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638531160462806475?width=700&height=700"
+                    alt="Lotus Milkshake"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Lotus Milkshake</h3>
+
+                <p>
+                    Creamy milkshake with
+                    Lotus biscuit.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 25.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PISTACHIO MILKSHAKE -->
+
+        <article
+            class="product-card"
+            data-category="drinks"
+            data-name="Pistachio Milkshake"
+            data-price="30"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638554661782895434?width=700&height=700"
+                    alt="Pistachio Milkshake"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Pistachio Milkshake</h3>
+
+                <p>
+                    Thick and creamy
+                    pistachio milkshake.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 30.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- COLD LATTE -->
+
+        <article
+            class="product-card"
+            data-category="coffee"
+            data-name="Cold Latte"
+            data-price="25"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/Ice_Coffee_636868805732725280.jpg?width=700&height=700"
+                    alt="Cold Latte"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Cold Latte</h3>
+
+                <p>
+                    Smooth espresso and
+                    chilled milk.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 25.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- COLD SPANISH LATTE -->
+
+        <article
+            class="product-card"
+            data-category="coffee"
+            data-name="Cold Spanish Latte"
+            data-price="25"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638554666567892949?width=700&height=700"
+                    alt="Cold Spanish Latte"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Cold Spanish Latte</h3>
+
+                <p>
+                    Sweet, creamy and
+                    perfectly chilled.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 25.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAPPUCCINO -->
+
+        <article
+            class="product-card"
+            data-category="coffee"
+            data-name="Cappuccino"
+            data-price="25"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/201903010_Talabat_UA_636880292737322357.jpg?width=700&height=700"
+                    alt="Cappuccino"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Cappuccino</h3>
+
+                <p>
+                    Classic espresso with
+                    silky milk foam.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 25.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- HOT CHOCOLATE -->
+
+        <article
+            class="product-card"
+            data-category="coffee"
+            data-name="Hot Chocolate"
+            data-price="26"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/201903010_Talabat_UA_636880292768272049.jpg?width=700&height=700"
+                    alt="Hot Chocolate"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Hot Chocolate</h3>
+
+                <p>
+                    Warm and rich chocolate
+                    drink.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 26.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ICE PISTACHIO LATTE -->
+
+        <article
+            class="product-card"
+            data-category="coffee"
+            data-name="Ice Pistachio Latte"
+            data-price="30"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638531159238615516?width=700&height=700"
+                    alt="Ice Pistachio Latte"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Ice Pistachio Latte</h3>
+
+                <p>
+                    Chilled latte with
+                    pistachio.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 30.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- VANILLA ICE CREAM -->
+
+        <article
+            class="product-card"
+            data-category="icecream"
+            data-name="Vanilla Ice Cream"
+            data-price="13"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://talabat.dhmedia.io/image/global-menu-service/TB_AE/vendor/25724/product/531971705/7b15aaee-3e2b-42a1-80e4-a894c7fe1b43_original.jpg?width=700&height=700"
+                    alt="Vanilla Ice Cream"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Vanilla Ice Cream</h3>
+
+                <p>
+                    Classic creamy vanilla
+                    ice cream.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>AED 13.00</strong>
+
+                    <a
+                        href="https://www.talabat.com/uae/kakaw-cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="add-cart"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- BIG TALABAT BUTTON -->
+
+    <div class="menu-bottom">
+
+        <a
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+        >
+            ORDER FROM TALABAT
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STORY
+========================= -->
+
+<section class="story-section" id="story">
+
+    <div class="story-content">
+
+        <p class="eyebrow">
+            OUR STORY
+        </p>
+
+        <h2>
+            Crafted for
+            <br>
+            <em>sweet moments.</em>
+        </h2>
+
+        <p>
+            More than a cafe, we're a place where
+            great taste brings people together.
+            From freshly made crepes and waffles
+            to specialty coffee, every item is
+            prepared with care.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Visit Us
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="story-quote">
+
+        <div class="quote-mark">
+            “
+        </div>
+
+        <blockquote>
+            Good food
+            <br>
+            tastes better
+            <br>
+            together.
+        </blockquote>
+
+        <span class="quote-line"></span>
+
+        <small>
+            KAKAW CAFE
+        </small>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery-section" id="gallery">
+
+    <div class="gallery-header">
+
+        <div>
+
+            <p class="eyebrow">
+                OUR GALLERY
+            </p>
+
+            <h2>
+                Moments at Kakaw
+            </h2>
+
+        </div>
+
+        <a
+            href="https://www.instagram.com/kakawcafe/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram-link"
+        >
+            Follow us on Instagram
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <a
+            class="gallery-item"
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="https://talabat.dhmedia.io/image/global-menu-service/TB_AE/vendor/25724/product/531971738/2daf1de1-73e0-4c1a-bb7b-1fdb8366c732_original.jpg?width=900&height=900"
+                alt="Molten Cake"
+                loading="lazy"
+            >
+        </a>
+
+        <a
+            class="gallery-item"
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638569924520700454?width=900&height=900"
+                alt="Kinder Crepe"
+                loading="lazy"
+            >
+        </a>
+
+        <a
+            class="gallery-item"
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638557848105743122?width=900&height=900"
+                alt="Pistachio Cup"
+                loading="lazy"
+            >
+        </a>
+
+        <a
+            class="gallery-item"
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638558723225699567?width=900&height=900"
+                alt="Chocolate Crepe"
+                loading="lazy"
+            >
+        </a>
+
+        <a
+            class="gallery-item"
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="https://talabat.dhmedia.io/image/talabat/MenuItems/mmw_638531160462806475?width=900&height=900"
+                alt="Lotus Milkshake"
+                loading="lazy"
+            >
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOCATION
+========================= -->
+
+<section class="location-section" id="contact">
+
+    <div class="location-content">
+
+        <p class="eyebrow">
+            VISIT US
+        </p>
+
+        <h2>
+            Khor Fakkan, UAE
+        </h2>
+
+        <p class="location-text">
+            Come and enjoy our desserts,
+            coffee and more.
+        </p>
+
+        <div class="location-details">
+
+            <div class="location-detail">
+
+                <span class="detail-icon">
+                    ◷
+                </span>
+
+                <div>
+                    <strong>Daily</strong>
+                    <p>
+                        8:00 AM — 12:00 AM
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="location-detail">
+
+                <span class="detail-icon">
+                    ♡
+                </span>
+
+                <div>
+                    <strong>Location</strong>
+                    <p>
+                        Khor Fakkan, UAE
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Kakaw+Cafe+Khor+Fakkan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+        >
+            Get Directions
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <div class="location-map">
+
+        <div class="map-card">
+
+            <iframe
+                title="Kakaw Cafe location"
+                src="https://www.google.com/maps?q=Kakaw%20Cafe%20Khor%20Fakkan&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <a
+                class="map-open"
+                href="https://www.google.com/maps/search/?api=1&query=Kakaw+Cafe+Khor+Fakkan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open in Google Maps →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CHOCOLATE BUTTON
+========================= -->
+
+<section class="chocolate-action">
+
+    <button
+        id="chocolateButton"
+        class="chocolate-button"
+        type="button"
+    >
+        🍫 DROP CHOCOLATE
+    </button>
+
+</section>
+
+
+<!-- =========================
+     CHOCOLATE RAIN
+========================= -->
+
+<div
+    class="chocolate-rain"
+    id="chocolateRain"
+></div>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-drip">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                Kakaw
+                <small>CAFE</small>
+            </div>
+
+            <p>
+                Good food. Great company.
+            </p>
+
+            <!-- FOOTER TALABAT -->
+            <a
+                href="https://www.talabat.com/uae/kakaw-cafe"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-order"
+            >
+                Order on Talabat →
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Order</h4>
+
+            <a
+                href="https://www.talabat.com/uae/kakaw-cafe"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Talabat
+            </a>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Kakaw+Cafe+Khor+Fakkan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Google Maps
+            </a>
+
+            <a
+                href="https://www.instagram.com/kakawcafe/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+        </div>
+
+
+        <div class="footer-column social-column">
+
+            <h4>Follow Us</h4>
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.instagram.com/kakawcafe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    ◎
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    ♪
+                </a>
+
+                <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    f
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column newsletter-column">
+
+            <h4>Stay Updated</h4>
+
+            <p>
+                Join our newsletter for new
+                items and offers.
+            </p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Kakaw Cafe. All rights reserved.
+        </p>
+
+        <div class="payment-methods">
+
+            <span>VISA</span>
+            <span>●●</span>
+            <span>▣</span>
+
+            <small>
+                Order securely through Talabat
+            </small>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     CART
+========================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+></div>
+
+<aside
+    class="cart-sidebar"
+    id="cartSidebar"
+>
+
+    <div class="cart-header">
+
+        <div>
+
+            <p class="eyebrow">
+                YOUR ORDER
+            </p>
+
+            <h2>
+                Your Basket
+            </h2>
+
+        </div>
+
+        <button id="cartClose">
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    ></div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total-row">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                AED 0
+            </strong>
+
+        </div>
+
+
+        <!-- TALABAT CHECKOUT -->
+
+        <a
+            href="https://www.talabat.com/uae/kakaw-cafe"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="checkout-btn"
+            id="checkoutBtn"
+        >
+            ORDER ON TALABAT →
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div
+    class="toast"
+    id="toast"
+>
+
+    <span id="toastMessage">
+        Added to order
+    </span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
